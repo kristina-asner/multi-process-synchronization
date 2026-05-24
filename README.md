@@ -79,5 +79,3 @@ The processes will perfectly synchronize to output numbers sequentially:
 ## 🧹 Resource Cleanup
 
 To prevent memory and kernel IPC leaks, the parent process actively monitors children lifecycle using `wait()` blocks, and completely deallocates the semaphore system from the kernel space upon execution completion via `IPC_RMID`.
-
-

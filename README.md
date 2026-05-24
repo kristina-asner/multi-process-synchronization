@@ -1,5 +1,3 @@
-
-```markdown
 # Multi-Process Synchronization using System V Semaphores
 
 A low-level Linux systems programming project demonstrating concurrent process synchronization, resource management, and race condition prevention using **System V Semaphores** in C.
@@ -19,8 +17,8 @@ Without proper synchronization, executing multiple independent processes would r
 ## 🔬 How the Synchronization Works
 
 1. **Initialization:** The program initializes a semaphore set containing a semaphore for each child process. Each semaphore is pre-loaded with a value that controls when its corresponding process can run:
-   ```c
-   semarg.array[i] = num_of_procs - 1 - i;
+```c
+semarg.array[i] = num_of_procs - 1 - i;
 
 ```
 

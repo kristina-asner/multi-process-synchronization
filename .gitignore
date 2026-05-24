@@ -1,0 +1,7 @@
+process_sync
+*.out
+*.exe
+*.o
+
+.DS_Store
+Thumbs.db
